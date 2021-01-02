@@ -1,17 +1,17 @@
 
-# Large File Download
+# Large File Downloader
 
-`large-file-download` allows you to download base64 encoded files from the client. 
+`large-file-downloader` allows you to download base64 encoded files from the client. 
 Most browsers limit `<a>` tag download methods to 2mb, this package provides an alternative allowing downloads of unlimited filesize.
 
 ## Usage
 
 ### Installation
 
-You can install using [npm](https://www.npmjs.com/package/large-file-download).
+You can install using [npm](https://www.npmjs.com/package/large-file-downloader).
 
 ```
-npm install large-file-download
+npm install large-file-downloader
 ```
 
 ## Download
@@ -19,7 +19,7 @@ npm install large-file-download
 #### CommonJS:
 
 ```
-const downloadFile = require('large-file-download');
+const downloadFile = require('large-file-downloader');
 
 downloadFile(base64String, fileName);
 ```
@@ -27,7 +27,7 @@ downloadFile(base64String, fileName);
 #### ES6 Modules:
  
 ```
-import downloadFile from 'large-file-download';
+import downloadFile from 'large-file-downloader';
 
 downloadFile(base64String, fileName);
 ```

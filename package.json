@@ -1,5 +1,5 @@
 {
-  "name": "large-file-download",
+  "name": "large-file-downloader",
   "version": "1.0.0",
   "description": "Download large base64 files client side.",
   "keywords": [
@@ -9,9 +9,9 @@
     "large",
     "file"
   ],
-  "homepage": "https://github.com/archiemcquaid/large-file-download",
+  "homepage": "https://github.com/archiemcquaid/large-file-downloader",
   "bugs": {
-    "url": "https://github.com/archiemcquaid/large-file-download/issues",
+    "url": "https://github.com/archiemcquaid/large-file-downloader/issues",
     "email": "archie@mcquaid.co.uk"
   },
   "main": "dist/index.js",
@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/archiemcquaid/large-file-download.git"
+    "url": "https://github.com/archiemcquaid/large-file-downloader.git"
   },
   "author": "Joe Bloggs <archie@mcquaid.co.uk> (archie.codes)",
   "license": "MIT",
