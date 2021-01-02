@@ -16,7 +16,7 @@ npm install large-file-download
 
 ## Download
 
-#### CommonJS
+#### CommonJS:
 
 ```
 const downloadFile = require('large-file-download');
@@ -39,13 +39,3 @@ You can enable logging by passing a truthy third argument. This is defaulted to 
 ```
 downloadFile(base64String, fileName, true);
 ```
-
-### download(base64String, fileName, log);
-
-
-
-Argument | Type | Required | Default | 
---- | --- | --- | --- |--- |
-base64String | String | true | n/a |
-fileName | String | true | n/a |  
-log | Boolean | false | false |  
