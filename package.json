@@ -1,0 +1,34 @@
+{
+  "name": "large-file-download",
+  "version": "1.0.0",
+  "description": "Download large base64 files client side.",
+  "keywords": [
+    "base64",
+    "download",
+    "client",
+    "large",
+    "file"
+  ],
+  "homepage": "https://github.com/archiemcquaid/large-file-download",
+  "bugs": {
+    "url": "https://github.com/archiemcquaid/large-file-download/issues",
+    "email": "archie@mcquaid.co.uk"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "npx babel src --out-dir dist",
+    "build:watch": "npx babel src --watch --out-dir dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/archiemcquaid/large-file-download.git"
+  },
+  "author": "Joe Bloggs <archie@mcquaid.co.uk> (archie.codes)",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11"
+  }
+}
