@@ -1,6 +1,6 @@
 {
   "name": "large-file-downloader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Download large base64 files client side.",
   "keywords": [
     "base64",
