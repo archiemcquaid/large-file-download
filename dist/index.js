@@ -1,17 +1,5 @@
 "use strict";
 
-var isBase64 = function isBase64(str) {
-  if (str === '' || str.trim() === '') {
-    return false;
-  }
-
-  try {
-    return btoa(atob(str)) === str;
-  } catch (err) {
-    return false;
-  }
-};
-
 var dataURIToBlob = function dataURIToBlob(base64) {
   var binStr = atob(base64.split(',')[1]);
   var len = binStr.length;
@@ -34,12 +22,8 @@ var downloadFile = function downloadFile(base64, filename) {
     throw new Error('Missing param base64 or filename.');
   }
 
-  if (!isBase64(base64)) {
-    throw new Error('File content must be a base64 string.');
-  }
-
   if (typeof filename !== 'string') {
-    throw new Error('Filename must be a string.');
+    throw new TypeError('Filename must be a string.');
   }
 
   var logger = log ? console.log : function () {

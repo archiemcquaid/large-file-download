@@ -1,12 +1,3 @@
-const isBase64 = (str) => {
-  if (str ==='' || str.trim() ===''){ return false; }
-  try {
-    return btoa(atob(str)) === str;
-  } catch (err) {
-    return false;
-  }
-}
-
 const dataURIToBlob = (base64) => {
   const binStr = atob(base64.split(',')[1]);
   const len = binStr.length;
@@ -23,14 +14,11 @@ const dataURIToBlob = (base64) => {
 };
 
 const downloadFile = (base64, filename, log = false) => {
-  if(!base64 || !filename) {
-    throw new Error('Missing param base64 or filename.')
+  if (!base64 || !filename) {
+    throw new Error('Missing param base64 or filename.');
   }
-  if(!isBase64(base64)) {
-    throw new Error('File content must be a base64 string.')
-  }
-  if(typeof filename !== 'string') {
-    throw new Error('Filename must be a string.')
+  if (typeof filename !== 'string') {
+    throw new TypeError('Filename must be a string.');
   }
   const logger = log ? console.log : () => null;
   logger('Creating blob from base64.');
