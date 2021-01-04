@@ -1,6 +1,6 @@
 {
   "name": "large-file-downloader",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Download large base64 files client side.",
   "keywords": [
     "base64",
@@ -23,7 +23,7 @@
     "type": "git",
     "url": "https://github.com/archiemcquaid/large-file-downloader.git"
   },
-  "author": "Joe Bloggs <archie@mcquaid.co.uk> (archie.codes)",
+  "author": "Archie McQuaid <archie@mcquaid.co.uk> (archie.codes)",
   "license": "MIT",
   "private": false,
   "devDependencies": {
